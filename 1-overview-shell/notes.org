@@ -46,9 +46,9 @@ I wasn't able to find the correct files containing this information under =/sys=
 
 - Check list of devices with =upower -e= (=-e= is short for =--enumerate=) to get the battery path, then use =upower -i= (=-i= is short for =--show-info=) with the path to display the battery information, for example:
 
-#+begin_src sh
-upower -i /org/freedesktop/UPower/devices/battery_BAT0
-#+end_src
+  #+begin_src sh
+  upower -i /org/freedesktop/UPower/devices/battery_BAT0
+  #+end_src
 
   - This will display a long list of information; the battery power level is in the line that contains =state:=, so far the values I've found for this field are =fully-charged= and =discharging=
 
