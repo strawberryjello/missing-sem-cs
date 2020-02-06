@@ -35,3 +35,25 @@ Notes
 - Originally tried this with =grep -irn=, which didn't work; =-r= (recursive search) and =-n= (display line numbers) don't apply in this case
   - I tend to use =grep -irn= out of habit, didn't immediately notice that this was causing issues
 - =--delimiter= only accepts a single character
+
+*** Step 9: Battery power level or CPU temperature from /sys
+
+I wasn't able to find the correct files containing this information under =/sys= (I'm currently on openSUSE Leap 15.1), so I looked this up
+
+**** Battery power
+
+- I found an [[https://askubuntu.com/questions/69556/how-do-i-check-the-batterys-status-via-the-terminal][Ubuntu-related question on Ask Ubuntu]] with an answer that suggests using =upower= to display battery information
+
+- Check list of devices with =upower -e= (=-e= is short for =--enumerate=) to get the battery path, then use =upower -i= (=-i= is short for =--show-info=) with the path to display the battery information, for example:
+
+#+begin_src sh
+upower -i /org/freedesktop/UPower/devices/battery_BAT0
+#+end_src
+
+  - This will display a long list of information; the battery power level is in the line that contains =state:=, so far the values I've found for this field are =fully-charged= and =discharging=
+
+**** CPU temperature
+
+The ff. article suggests installing =hddtemp= to see hard drive and SSD temperatures and =sensors= to see the CPU temperature, haven't tried these yet
+
+[[https://www.cyberciti.biz/faq/check-cpu-temperature-in-opensuse-linux/][How to check CPU temperature in OpenSUSE Linux]] (last updated July 5, 2019)
