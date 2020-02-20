@@ -15,3 +15,7 @@
   - bash clients:
     - https://github.com/pepa65/tldr-bash-client
     - https://github.com/raylee/tldr
+- locate(1) man page
+  - http://man7.org/linux/man-pages/man1/locate.1.html
+- locate vs find - Unix & Linux StackExchange
+  https://unix.stackexchange.com/questions/60205/locate-vs-find-usage-pros-and-cons-of-each-other
