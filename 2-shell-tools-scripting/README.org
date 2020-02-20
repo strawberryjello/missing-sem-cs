@@ -1,0 +1,17 @@
+* Notes
+** Resources linked
+
+- test(1) man page
+  - http://man7.org/linux/man-pages/man1/test.1.html
+- What is the difference between test, [ and [[ ?
+  - https://mywiki.wooledge.org/BashFAQ/031
+- Special Characters - Advanced Bash-Scripting Guide chapter 3
+  - https://www.tldp.org/LDP/abs/html/special-chars.html
+- ShellCheck, static analysis tool for shell scripts
+  - https://github.com/koalaman/shellcheck
+- TLDR Pages, simplified and community-driven man pages
+  - https://tldr.sh/
+  - https://github.com/tldr-pages/tldr
+  - bash clients:
+    - https://github.com/pepa65/tldr-bash-client
+    - https://github.com/raylee/tldr
