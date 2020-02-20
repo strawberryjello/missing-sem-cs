@@ -18,4 +18,6 @@
 - locate(1) man page
   - http://man7.org/linux/man-pages/man1/locate.1.html
 - locate vs find - Unix & Linux StackExchange
-  https://unix.stackexchange.com/questions/60205/locate-vs-find-usage-pros-and-cons-of-each-other
+  - https://unix.stackexchange.com/questions/60205/locate-vs-find-usage-pros-and-cons-of-each-other
+- fd, a simple, fast and user-friendly alternative to 'find'
+  - https://github.com/sharkdp/fd
