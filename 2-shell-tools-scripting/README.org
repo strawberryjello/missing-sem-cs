@@ -2,6 +2,7 @@
 ** Resources linked
 
 - test(1) man page
+  - check file types and compare values
   - http://man7.org/linux/man-pages/man1/test.1.html
 - What is the difference between test, [ and [[ ?
   - https://mywiki.wooledge.org/BashFAQ/031
@@ -16,8 +17,62 @@
     - https://github.com/pepa65/tldr-bash-client
     - https://github.com/raylee/tldr
 - locate(1) man page
+  - list files in databases that match a pattern
   - http://man7.org/linux/man-pages/man1/locate.1.html
 - locate vs find - Unix & Linux StackExchange
   - https://unix.stackexchange.com/questions/60205/locate-vs-find-usage-pros-and-cons-of-each-other
 - fd, a simple, fast and user-friendly alternative to 'find'
+  - colorized terminal output, case-insensitive search by default, ignores hidden directories and files and .gitignore patterns by default, supports regex search, Unicode-aware
+  - Rust
+  - available for openSUSE via zypper
   - https://github.com/sharkdp/fd
+- grep alternatives
+  - ack
+    - Perl 5
+    - https://beyondgrep.com/
+  - ag
+    - similar to ack with focus on speed
+    - mostly in C
+    - available for openSUSE via zypper (the_silver_searcher)
+    - https://github.com/ggreer/the_silver_searcher
+  - rg (ripgrep)
+    - recursive regex search, respects .gitignore and skips hidden/files and directories and binary files by default
+    - mostly in Rust
+    - available for openSUSE Leap 15.1 and up, as well as Tumbleweed (ripgrep)
+    - https://github.com/BurntSushi/ripgrep
+- fzf, command-line fuzzy finder
+  - mostly in Go
+  - available for openSUSE via zypper, can also be installed via cloning the repo and running the install script
+  - https://github.com/junegunn/fzf
+- fish shell
+  - https://fishshell.com/
+  - https://github.com/fish-shell/fish-shell
+- fasd, offers quick access to files and directories for POSIX shells
+  - ranks files and directories by "frecency" (both frequency and recency)
+    - https://developer.mozilla.org/en-US/docs/Mozilla/Tech/Places/Frecency_algorithm
+  - inspired by tools like the ff.
+    - autojump, maintains a database of most-used directories
+      - https://github.com/wting/autojump
+    - z, tracks most used directories based on frecency
+      - available for bash and zsh
+      - https://github.com/rupa/z
+  - shell
+  - available for openSUSE via rpm, link in wiki (linked from Github README)
+  - https://github.com/clvv/fasd
+- tree(1) man page
+  - list contents of directories in a tree-like format
+  - https://linux.die.net/man/1/tree
+- broot, directory tree navigation
+  - Rust
+  - https://dystroy.org/broot/
+  - https://github.com/Canop/broot
+- nnn, terminal file manager for X
+  - mostly in C and shell
+  - older version available for openSUSE Leap 15.1, more recent version available for Tumbleweed
+  - https://github.com/jarun/nnn
+- ranger, console file manager with vi keybindings
+  - comes with rifle, a file launcher that can automatically find out which program to use for which file type
+  - mostly in Python
+  - older version available for openSUSE Leap 15.1, more recent version available for Tumbleweed
+  - https://ranger.github.io/
+  - https://github.com/ranger/ranger
